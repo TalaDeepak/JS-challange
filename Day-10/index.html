@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .signup-form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+      }
+      .signup-form h2 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      .signup-form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .signup-form input[type="text"],
+      .signup-form input[type="text"],
+      .signup-form input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .signup-form input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .signup-form input[type="submit"]:hover {
+        background-color: #218838;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <section class="head">
+        <div>
+          <p class="para">This will be changed when you click the butto</p>
+          <button class="btn">Click me</button>
+        </div>
+        <div>
+          <img
+            class="img"
+            src="https://s7g10.scene7.com/is/image/ktm/378263_pure-performance-2:Large?wid=1575&hei=897&dpr=off"
+            height="200"
+            width="300"
+            alt="bike image"
+          />
+        </div>
+      </section>
+      <section class="mid">
+        <div class="center">
+          <p class="center-para">I am here at the center</p>
+          <input class="inp" placeholder="Enter your text" />
+        </div>
+        <div>
+          <form class="signup-form">
+            <h2>Signup</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+
+            <input type="submit" value="Sign Up" />
+          </form>
+        </div>
+        <div class="parent" id="parentElement">
+          <button id="addChildButton">Add Child</button>
+        </div>
+      </section>
+      <section class="end">
+        <ul id="myList">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>
+
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
