@@ -1,0 +1,140 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #73a5ff, #5477f5);
+  transition: background 0.5s ease-in-out;
+}
+
+.weather-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.weather-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.search {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.search input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 60%;
+  transition: border 0.3s ease;
+}
+
+.search input:focus {
+  border-color: #5477f5;
+  outline: none;
+}
+
+.search button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5477f5;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+  background-color: #405ecf;
+}
+
+.current-weather, .forecast {
+  margin-top: 20px;
+}
+
+.current-weather .icon {
+  font-size: 4rem;
+  margin: 10px 0;
+}
+
+.forecast h2 {
+  margin-bottom: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.forecast .day {
+  background-color: #f0f8ff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: slideInUp 1s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.forecast .day:hover {
+  transform: scale(1.05);
+}
+
+.forecast .day p {
+  margin: 5px 0;
+}
+
+.location h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.temperature p {
+  font-size: 2rem;
+  color: #ff6e6e;
+}
+
+.description p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.details p {
+  font-size: 1rem;
+  color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}

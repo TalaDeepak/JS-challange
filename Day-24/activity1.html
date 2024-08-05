@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="activity5.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="weather-container">
+      <h1>Weather App</h1>
+      <div class="search">
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <button id="searchButton">Search</button>
+      </div>
+      <div class="current-weather">
+        <div class="location">
+          <h2 id="city">City, Country</h2>
+        </div>
+        <div class="icon">
+          <i id="weatherIcon" class="wi wi-day-sunny"></i>
+        </div>
+        <div class="temperature">
+          <p id="temp">--°C</p>
+        </div>
+        <div class="description">
+          <p id="condition">Condition</p>
+        </div>
+        <div class="details">
+          <p id="humidity">Humidity: --%</p>
+          <p id="wind">Wind: -- km/h</p>
+        </div>
+      </div>
+      <div class="forecast">
+        <h2>5-Day Forecast</h2>
+        <div id="forecastContainer"></div>
+      </div>
+    </div>
+    <script src="activity4.js"></script>
+  </body>
+</html>
